@@ -1,0 +1,27 @@
+{
+  "name": "@nli/runtime",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/server.js",
+  "types": "./dist/server.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/server.d.ts",
+      "import": "./dist/server.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/server.ts --format esm --dts --clean --external @nli/backend --external @nli/protocol"
+  },
+  "dependencies": {
+    "@nli/backend": "0.1.0",
+    "@nli/protocol": "0.1.0",
+    "ajv": "^8.17.1",
+    "express": "^5.1.0"
+  }
+}

@@ -221,3 +221,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node workspace and local application state
+node_modules/
+dist/
+.data/
+*.tsbuildinfo
+coverage/
+.env.*
+!.env.example

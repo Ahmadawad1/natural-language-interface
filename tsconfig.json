@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nli/protocol": ["packages/protocol/src/index.ts"],
+      "@nli/backend": ["packages/backend/src/index.ts"],
+      "@nli/react": ["packages/react/src/index.tsx"]
+    }
+  },
+  "include": ["packages", "apps", "scripts", "tests", "vitest.config.ts"]
+}
